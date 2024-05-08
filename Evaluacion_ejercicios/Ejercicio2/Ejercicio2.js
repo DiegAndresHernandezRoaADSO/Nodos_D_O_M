@@ -7,6 +7,7 @@ let sumatotal = 0;
 for (let i = 0; i < n_cant; i++) {
   let int_numeros = Number(prompt("Ingresa el número " + (i + 1) + ":"));
   numeros.push(int_numeros);
+  //el push es una función que nos permite añadir un nuevo elemento al final de un array
   sumatotal += int_numeros;
 }
 
@@ -19,6 +20,7 @@ c. Contar los números pares
 d. Calcular el promedio de los números primos
 e. Calcular el promedio de números pares`);
 
+//el touper es un metodo que devuelve el valor convertido en mayusculas de cadena que realiza la llamada
 switch (Opción.toUpperCase()) {
   case 'A':
     let resultadoSuma = sumarNumeros(numeros);
@@ -91,9 +93,10 @@ function contarPares(numeros) {
 function calcularPromedioPrimos(numeros) {
   let primos = numeros.filter(numero => esPrimo(numero));
   let suma = primos.reduce((total, num) => total + num, 0);
-  let promedio = suma / primos.length;
+  let promedio = suma / primos.length; // retorna el tamaño o número de elementos de un arreglo
   return promedio;
 }
+
 
 function calcularPromedioPares(numeros) {
   let pares = numeros.filter(numero => esPar(numero));
