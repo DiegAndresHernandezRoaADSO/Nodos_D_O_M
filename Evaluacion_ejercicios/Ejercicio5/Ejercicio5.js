@@ -5,7 +5,9 @@ let operador = prompt("¿Qué operación deseas hacer?\n A. Suma\n B. Resta\n C.
 let numero1 = Number(prompt("Ingresa el primer número"));
 let numero2 = Number(prompt("Ingresa el segundo número"));
 
+
 const calculadora = new Calculadora();
+
 
 
 let total;
@@ -29,3 +31,4 @@ if (operador === 'A') {
 } else {
   alert("Opción de operación incorrecta");
 }
+
