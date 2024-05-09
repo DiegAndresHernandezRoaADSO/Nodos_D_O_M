@@ -82,6 +82,8 @@ function contarPrimos(numeros) {
   return numeros.filter(numero => esPrimo(numero)).length;
 }
 
+//el filter devuelve todos los elementos de un arreglo que satisfacen la condicion especificada en la funcion
+
 function esPar(numero) {
   return numero % 2 === 0;
 }
@@ -93,7 +95,7 @@ function contarPares(numeros) {
 function calcularPromedioPrimos(numeros) {
   let primos = numeros.filter(numero => esPrimo(numero));
   let suma = primos.reduce((total, num) => total + num, 0);
-  let promedio = suma / primos.length; // retorna el tamaño o número de elementos de un arreglo
+  let promedio = suma / primos.length; //retorna el tamaño o número de elementos de un arreglo
   return promedio;
 }
 
