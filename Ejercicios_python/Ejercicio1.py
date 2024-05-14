@@ -3,14 +3,14 @@
 # en <dirección> y su número de teléfono es <teléfono>.
 
 
-infor = {"Nombre" :"" , "Edad": "" , "Direccion": "", "telefono" : "" }
+Infor = {"Nombre" :"" , "Edad": "" , "Direccion": "", "telefono" : "" }
 
 for i in infor:
   dato = str(input("¿cual es tu " + i +"?"))
   infor [i] = dato
 
 
-print(infor["Nombre"] + " Tiene " + infor["Edad"] + " años, vive en " + infor["Direccion"] + "y su numero de telefono es " + infor["telefono"])
+print(Infor["Nombre"] + " Tiene " + Infor["Edad"] + " años, vive en " + Infor["Direccion"] + "y su numero de telefono es " + Infor["telefono"])
 
  
 
