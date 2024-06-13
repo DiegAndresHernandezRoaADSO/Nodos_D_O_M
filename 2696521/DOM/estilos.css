@@ -41,3 +41,40 @@ header{
   padding: var(--padding);
   margin-bottom:  var(--margin);
 }
+
+
+section{
+  padding: var(--margin);
+}
+a{
+  color: var(--starship);
+  text-decoration: none;
+}
+
+h1 , h2 {
+  padding: var(--padding);
+}
+p{
+  font-size: 1rem;
+  margin: 0 0 var(--margin);
+  /* color: var(--white); */
+}
+
+p::first-letter{
+  font-size: 1.4rem;
+  color:  var(--husk);
+  font-weight: bold;
+}
+
+url{
+  list-style: none;
+}
+
+ul.list > li.item{
+  cursor: pointer;
+}
+
+li.item:hover{
+  color: var(--mine-sharf);
+  
+}
