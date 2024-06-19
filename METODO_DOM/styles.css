@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --starship:#F3DB4C;
+  --Mineshaft: #343434;
+  --Husk:#B2A443;
+  --Sycamore: #94843C;
+  --white: #fff;
+  --max-width: 1400px;
+  --padding: 8px;
+  --margin: 10px;
+  --border-radius: 8px;
+  --transition: 1s;
+  --font-size: 16px;
+}
+
+/* seudos elementos */
+
+::selection {
+  background-color: var(--starship);
+  color: var(--white);
+}
+
+/* selector */
+body{
+background-color: var(--Mineshaft);
+color: var(--white); 
+font-size: var(--font-size);
+font-family: "Kanit", sans-serif;
+line-height: 24px;
+}
+
+header{
+  text-align: center;
+  background-color: var(--Mineshaft);
+  color: var(--starship);
+  border-bottom: solid 1px var(--Husk);
+  padding: var(--padding);
+  margin-bottom: var(--margin);
+}
+
+section {
+  padding: var(--padding);
+}
+a,.list__item{
+  color: var(--starship);
+  text-decoration: none;
+}
+
+/* selectores combinados */
+h1 , h2 {
+  padding: var(--padding);
+}
+
+
+p{
+  font-size: 1rem;
+  margin: 0 0 var(--margin);
+  color: var(--white);
+}
+
+/* aplicar un selec elemento tiene 4 puntos */
+p::first-letter{
+font-size: 1.4rem;
+color: var(--Husk);
+font-weight: bold;
+}
+
+ul{
+  list-style: none;
+}
+
+li.list__item{
+  cursor: pointer;
+
+}
+
+
+li.item:hover a{
+  color: var(--Mineshaft);
+
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding);
+}
+
+/* formulario */
+
+.search{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search__form{
+  border: solid 1px var(--starship);
+  border-radius: var(--border-radius);
+  margin-bottom: var(--margin);
+  padding: var(--padding);
+  /* grid */
+  display: inline-grid;
+  justify-content: end;
+  grid-template-columns: auto 40px;
+  grid-template-rows: auto;
+  gap: 4px;
+} 
+
+.input{
+  width: 100;
+  padding: var(--padding);
+  outline: none;
+  border: solid 1px var(--starship);
+  font-size: 1rem;
+  color: var(--Mineshaft);
+}
+
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.card{
+  width: 450px;
+  border: solid 1px var(--husk);
+  border-radius: var(--border-radius);
+  margin: 0 auto;
+}
+
+.card_header{
+  padding: var(--padding);
+}
+
+.card__title{
+  text-wrap: wrap;
+  word-break: break-all;
+}
+
+.card__body{
+  padding: var(--padding);
+}
+
+.card__img{
+  width: 100%;
+}
+
+.card__paragraph{
+  padding: var(--padding);
+}
+.button {
+  padding: var(--padding);
+  background-color: var(--starship);
+  color: var(--Husk);
+  border-radius: var(--border-radius);
+  border: solid 0.5px var(--Sycamore);
+  font-size: .9rem;
+  font-weight: 500;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.button--icon{
+  justify-content: center;
+  align-items: center;
+}
+
+.button__text{}
+.button__icon{
+font-size: 1.4rem;
+}
+
+.button--onclick {
+  background-color: var(--Mineshaft);
+  color: var(--starship);
+}
+
+.button:hover {
+  background-color: var(--Mineshaft);
+  color: var(--Sycamore);
+}
+
+.button--onclick:hover {
+  background-color: var(--starship);
+  color: var(--Mineshaft);
+}
+
+.list {
+  text-align: center;
+  padding: var(--padding);
+}
+
+.list__item{
+border-bottom: solid 1px var(--Sycamore);
+padding: var(--padding);
+transition: var(--transition);
+font-size: var(--font-size);
+}
+
+.list__item:hover{
+  background-color: var(--Husk);
+  color: var(--Sycamore);
+}
+
+ul.list > li.list__item:last-child{
+border-bottom: none;
+}
