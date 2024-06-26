@@ -12,7 +12,9 @@ const $header_class_all = dom.querySelectorAll(".header");
 const $header_id = dom.querySelector("#header");
 const id = document.getElementById("header");
 const _class = document.getElementsByClassName("header");
-const $main = dom.querySelector("main")
+const $main = dom.querySelector("main");
+
+const $buscar = dom.querySelector("div.card");
 
 
 console.log(wh);
@@ -38,4 +40,32 @@ console.log(body.childNodes);
 console.log($main);
 
 $main.childNodes.forEach((nodo, dos) => console.log(nodo, dos));
-$main.childNodes.filter.$header
+
+// const arreglonodo = Array.from($main.childNodes);
+const arreglonodo = [...$main.childNodes];
+const nuevo2 = arreglonodo.filter((nodo) => (nodo.nodeType === nodo.TEXT_NODE) ? true: false
+);
+console.log(arreglonodo);
+console.clear();
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log($main.childNodes); // AQUI TENEMOS A LOS HIJOS
+console.log($main.parentElement);  // AQUI ACCEDIMOS AL PAPA
+console.log($main.previousElementSibling);  // AQUI ACCEDIMOS AL hermano
+console.log($main.nextElementSibling);  // AQUI ACCEDIMOS AL SCRIPT
+
+console.log();
+
+
+
