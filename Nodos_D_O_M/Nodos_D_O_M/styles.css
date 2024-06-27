@@ -1,0 +1,35 @@
+*{
+    top: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+#root{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.box{
+    width: 250px;
+    height: auto;
+    background-color: rgb(183, 185, 187);
+    color: black;
+    border-radius: 15px; 
+    text-align: center;
+    padding: 10px;
+}
+
+.box p {
+  margin-bottom: 20px;
+}
+
+.border{
+  border: solid 2px rgb(7, 7, 7);
+}
+
+
+
+    
