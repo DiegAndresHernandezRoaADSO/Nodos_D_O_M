@@ -1,21 +1,34 @@
-# paso a paso
 
-# para instalar este servidos 
-# se necesita mirar que version tenemos 
-# node -v
+primero revisamos la versiones "Deber salir v20.15.0 o similar"
 
-# instalamos el servidor
-
-# npm install -g json-server
-
-# depues ya quedaria instalado el node y asi ya podemos usar este servidor local
-
-# depsues creamos una carpeta server que ahi es donde ira un 
-# archivo llamado db.json y ahi iria la informacion del json y listo
+node -v
 
 
+Revisamos si tenemos  la version npm "Debe salir 10.7.0 o similar"
+
+npm -v
 
 
+Creamos una carpeta server
+
+mkdir server
 
 
+Instalamos json-server global
 
+npm install -g json-server
+
+
+Creamos un archivo dentro de la carpeta server y colocamos lo que vamos a consumir las api
+
+touch db.json
+
+
+Páselo a la CLI del servidor JSON
+
+npx json-server db.json
+
+
+Y colocamos en el navegador
+
+http://localhost:3000/
